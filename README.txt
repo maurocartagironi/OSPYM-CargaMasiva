@@ -1,1 +1,0 @@
-# OSPYM-CargaMasiva
