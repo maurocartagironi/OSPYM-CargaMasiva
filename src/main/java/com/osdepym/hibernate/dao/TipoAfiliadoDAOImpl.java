@@ -24,7 +24,6 @@ public class TipoAfiliadoDAOImpl implements TipoAfiliadoDAO{
 	
 	@Override
 	public TipoAfiliado get(Long id) throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -43,21 +42,11 @@ public class TipoAfiliadoDAOImpl implements TipoAfiliadoDAO{
 	}
 
 	@Override
-	public void save(TipoAfiliado t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void save(TipoAfiliado t) throws CustomException {}
 
 	@Override
-	public void update(TipoAfiliado t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(TipoAfiliado t) throws CustomException {}
 
 	@Override
-	public void delete(TipoAfiliado t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
-
+	public void delete(TipoAfiliado t) throws CustomException {}
 }

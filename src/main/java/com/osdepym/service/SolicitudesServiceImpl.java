@@ -391,7 +391,6 @@ public class SolicitudesServiceImpl implements SolicitudesService{
 	public SPResponseDTO confirmarCargaMasiva(Long idArchivo) throws CustomException{
 		Session session = null;
 		Transaction tx = null;
-		Long archivoId;
 		SPResponseDTO response = new SPResponseDTO();
 		try {
 			session = this.sessionFactory.getCurrentSession();

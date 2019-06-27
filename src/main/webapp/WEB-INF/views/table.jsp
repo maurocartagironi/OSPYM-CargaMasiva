@@ -12,7 +12,7 @@
 			<label class="control control-checkbox">
 		        <spring:message code="label.select.all" />
 		            <input type="checkbox" id="check-all-afiliados" />
-		        <div class="control-indicator"></div>
+		        <span class="control-indicator"></span>
 		    </label>
 		</div>
 	<div class="search-table-outter wrapper" id="content-table-child">

@@ -1,7 +1,5 @@
 package com.osdepym.util;
 
-import java.text.SimpleDateFormat;
-
 import org.springframework.beans.BeanUtils;
 
 import com.osdepym.dto.AfiliadoDTO;

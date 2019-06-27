@@ -20,36 +20,33 @@
 					<c:if test="${errormsg != null}">
 	                    <div class="alert alert-danger" role="alert">
 							${errormsg}
-							</div>
+						</div>
 					</c:if>
-	               <div id="errorRequeridos" class="alert alert-danger" role="alert" style="display:none;">
+	               	<div id="errorRequeridos" class="alert alert-danger" role="alert" style="display:none;">
 						Introduzca los datos requeridos y vuelva a cargar el archivo.
 					</div>
 					<div id="errorCargarArchivo" class="alert alert-danger" role="alert" style="display:none;">
 						
 					</div>
-					
                 	<form:form class="form-cartilla custom-form" method="post" id="importForm" modelAttribute="importForm" action="${enviarUrl}" enctype="multipart/form-data">
                 	<spring:message code="select.label.empty" var="emptyValue" />
-                    <div class="row">
-                        
-                       
-                        <div class="col-md-4">
-                            <!-- OBRAS SOCIALES -->
-                            <div class="form-group">
-                                <label class="control-label">
-                                    Obra Social
-                                </label>
-                                <form:select path="obraSocialId" class="form-control" id="obraSocial" >
-                                	<form:option value="" label=" ${emptyValue} " />
-                                	<form:options items="${obrassociales}" itemValue="obraSocialID" itemLabel="descripcionObraSocial" />
-                            	</form:select>
-                            </div>
-                        </div>
-                   
-                        <div class="col-md-4">
-                        <!-- TIPO CARGA -->
-                        <div class="form-group">
+	                    <div class="row">
+	                        <div class="col-md-4">
+	                            <!-- OBRAS SOCIALES -->
+	                            <div class="form-group">
+	                                <label class="control-label">
+	                                    Obra Social
+	                                </label>
+	                                <form:select path="obraSocialId" class="form-control" id="obraSocial" >
+	                                	<form:option value="" label=" ${emptyValue} " />
+	                                	<form:options items="${obrassociales}" itemValue="obraSocialID" itemLabel="descripcionObraSocial" />
+	                            	</form:select>
+	                            </div>
+	                        </div>
+	                   
+	                        <div class="col-md-4">
+	                        <!-- TIPO CARGA -->
+	                        <div class="form-group">
                                 <label class="control-label">
                                     Tipo de Archivo
                                 </label>
@@ -61,24 +58,22 @@
                             		<input type="hidden" id="tipoCarga-${par.tipoCargaId}" value="${par.requiereTipoAfiliado}" />
                             	</c:forEach>
                             </div>
-                            
-                        </div>
-                        <div class="col-md-4">
-                            <!--  ARCHIVO-->
-                            <div class="form-group">
-                                <div class="col-md-12">
-			                        <div id="file-container" class="form-group ${status.error ? 'has-error' : ''}">
-										<input type="file" id="uploadFile" class="btn-file" name="uploadFile" accept=".xls,.xlsx"/>
-						      			<button class="btn btn-primary btn-lg" id="buttonUploadFile">
-						      			  	<spring:message code="label.uploadfile" />
-								  		</button>
-										
-			                        </div>
-		                    	</div>
-                            </div>
-                        </div>
-                       
-                    </div>
+	                        </div>
+	                        <div class="col-md-4">
+	                            <!--  ARCHIVO-->
+	                            <div class="form-group">
+	                                <div class="col-md-12">
+				                        <div id="file-container" class="form-group ${status.error ? 'has-error' : ''}">
+											<input type="file" id="uploadFile" class="btn-file" name="uploadFile" accept=".xls,.xlsx"/>
+							      			<button class="btn btn-primary btn-lg" id="buttonUploadFile">
+							      			  	<spring:message code="label.uploadfile" />
+									  		</button>
+											
+				                        </div>
+			                    	</div>
+	                            </div>
+	                        </div>
+	                    </div>
                     <div class="row pb-4">
                         <div class="col-md-4">
                             <!-- TIPO AFILIADO -->
@@ -101,7 +96,6 @@
                                 <form:input id="cuitId" path="cuit" type="text" class="form-control" />
                             </div>
                         </div>
-                        
                         <div class="col-md-4">
                             <!--  PAUTA -->
                             <div class="form-group">
@@ -114,12 +108,13 @@
                             </div>
                         </div>        
                     </div>
-            	<form:input id="idArchivo" path="idArchivo" type="hidden" class="form-control" />
-        		<button onclick="descargarPlantilla()" type="button" class="btn btn-primary btn-lg btn-search" id="ingreso-masivo">DESCARGAR PLANTILLA</button>
-            	<div id="table">
-            		<jsp:include page="importTable.jsp" />	
+		           	<form:input id="idArchivo" path="idArchivo" type="hidden" class="form-control" />
+			       		<button onclick="descargarPlantilla()" type="button" class="btn btn-primary btn-lg btn-search" id="ingreso-masivo">DESCARGAR PLANTILLA</button>
+		            	<div id="table">
+		            		<jsp:include page="importTable.jsp" />	
+		            	</div>
+            		</form:form>
             	</div>
-            	</form:form>
             </div>
         </section>
     </body>

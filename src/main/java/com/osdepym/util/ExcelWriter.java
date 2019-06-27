@@ -19,6 +19,7 @@ import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import org.apache.poi.ss.usermodel.BorderStyle;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Font;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;
@@ -229,7 +230,7 @@ public class ExcelWriter {
     public static boolean isRowEmpty(Row row) {
         for (int c = row.getFirstCellNum(); c < row.getLastCellNum(); c++) {
             Cell cell = row.getCell(c);
-            if (cell != null && cell.getCellType() != Cell.CELL_TYPE_BLANK)
+            if (cell != null && cell.getCellTypeEnum() != CellType.BLANK)
                 return false;
         }
         return true;

@@ -24,33 +24,22 @@ public class PautaDaoImpl implements PautaDAO{
 	
 	@Override
 	public Pauta get(Long id) throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<Pauta> getAll() throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void save(Pauta t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void save(Pauta t) throws CustomException {}
 
 	@Override
-	public void update(Pauta t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(Pauta t) throws CustomException {}
 
 	@Override
-	public void delete(Pauta t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void delete(Pauta t) throws CustomException {}
 	
 	@Override
 	public List<Pauta> getByCUIT(String cuitNumber) throws CustomException {

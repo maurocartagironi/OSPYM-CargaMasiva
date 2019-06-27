@@ -37,33 +37,22 @@ public class SolicitudesDAOImpl implements SolicitudesDAO {
 	
 	@Override
 	public Afiliado get(Long id) throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<Afiliado> getAll() throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void save(Afiliado t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void save(Afiliado t) throws CustomException {}
 
 	@Override
-	public void update(Afiliado t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(Afiliado t) throws CustomException {}
 
 	@Override
-	public void delete(Afiliado t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void delete(Afiliado t) throws CustomException {}
 
 	@Override
 	public List<Afiliado> buscar(SolicitudesForm form) throws CustomException {

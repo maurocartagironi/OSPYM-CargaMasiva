@@ -24,7 +24,6 @@ public class TipoCargaDAOImpl implements TipoCargaDAO{
 
 	@Override
 	public TipoCarga get(Long id) throws CustomException {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -43,21 +42,12 @@ public class TipoCargaDAOImpl implements TipoCargaDAO{
 	}
 
 	@Override
-	public void save(TipoCarga t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void save(TipoCarga t) throws CustomException {}
 
 	@Override
-	public void update(TipoCarga t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void update(TipoCarga t) throws CustomException {}
 
 	@Override
-	public void delete(TipoCarga t) throws CustomException {
-		// TODO Auto-generated method stub
-		
-	}
+	public void delete(TipoCarga t) throws CustomException {}
 
 }
